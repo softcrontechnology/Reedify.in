@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- set the HandheldFriendly -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);        })(window, document, 'script', 'dataLayer', 'GTM-KVQZBKF');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="author" content="Good Space Modulars Pvt. Ltd.">
+    <!-- include poppins google font cdn link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i%7CRoboto:400,400i,500,500i,700,700i" rel="stylesheet">
+    <!-- set the page title -->
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- include the site Fontsicon stylesheet -->
+    <link rel="stylesheet" href="css/fontsicon.css">
+    <!-- include the site Plugins stylesheet -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- include theme color setting stylesheet -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- include the site responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Reedify",
+  "url": "https://www.reedify.in",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.webp">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.webp">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.webp">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.webp">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.webp">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.webp">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.webp">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.webp">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MY8GJQN9E4');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVQZBKF"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    
+    
+     
+    <div id="pageWrapper">
+        <header id="pageHeader">
+            <!-- pageHeaderTopBar -->
+            <div class="pageHeaderTopBar bg-light">
+                <div class="container-fluid clearfix position-relative">
+                    <div class="row">
+                        <div class="col-3 col-lg-6 pd-left">
+                            <!-- topBarContactList -->
+                            <ul class="list-unstyled topBarContactList align-items-center mb-0 d-none d-md-flex">
+                                <li>
+                                    <a href="tel:9812053001;">
+                                        <i class="fas fa-phone fa-flip-horizontal icn"><span class="sr-only">icon</span></i>
+                                        <span class="d-none d-lg-inline text-dark">+91-9812053001</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:sales@reedify.in;">
+                                        <i class="fas fa-envelope icn"><span class="sr-only">icon</span></i>
+                                        <span class="d-none d-lg-inline text-dark">sales@reedify.in</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-9 col-lg-6 d-flex justify-content-end position-static">
+                            <ul class="list-unstyled topBarContactList-right align-items-center mb-0 d-none d-md-flex">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/reedifymodularkitchen/" aria-label="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="https://www.instagram.com/reedifymodular/" aria-label="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="https://twitter.com/ReedifyM" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="https://www.youtube.com/channel/UCFmQ0CLl2GNQjkL0lWbFRWQ" aria-label="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="https://in.pinterest.com/Reedifymodular/" aria-label="pinterest" target="_blank"><i class="fab fa-pinterest "></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerFixer">
+                <div>
+                    <!-- pageHeaderHolder -->
+                    <div class="container-fluid bg-white clearfix pageHeaderHolder">
+
+                        <div class="logo alignleft">
+                            <a href="<%=ResolveUrl("~/")%>">
+                                <img src="images/reedify-logo.webp" width="115" height="46" alt="Reedify-Logo">
+                            </a>
+                        </div>
+
+                        <div class=" alignright d-flex justify-content-end align-items-md-start">
+                            <nav id="pageNav" class="navbar navbar-expand-lg order-lg-1">
+
+                                <button class="navbar-toggler pageMainNavOpener" type="button" data-bs-toggle="collapse" data-bs-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse mainNavCollapse" id="pageMainNavCollapse">
+                                    <ul class="navbar-nav pageMainNavigation justify-content-md-end ">
+                                        <li id="btnkitchen" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/modular-kitchen-manufacturer">Modular Kitchen</a>
+                                        </li>
+                                        <li id="btnwardrobe" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/wardrobe-manufacturer">Storage & Wardrobe</a>
+                                        </li>
+                                        <li id="btnbathroom" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/bathroom-vanity-design">Bathroom Vanity</a>
+                                        </li>
+                                        <li id="btntv" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/tv-unit-manufacturer">Tv Unit</a>
+                                        </li>
+                                        <li id="btnpooja" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/pooja-unit-design">Pooja Unit</a>
+                                        </li>
+                                        <li id="btnoffice" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/office-furniture-manufacturer">Office Furniture</a>
+                                        </li>
+                                        <li id="btntable" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/study-table-manufacturer">Study Table</a>
+                                        </li>
+                                        <li id="btncnc" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/cnc-cutting-design">CNC Cutting</a>
+                                        </li>
+                                        <li id="btnacc" class="nav-item">
+                                            <a class="nav-link fwMedium" href="/modular-accessories-and-fittings">Accessories n Fittings</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="pageFooterAreaWrap position-relative text-center text-sm-left">
+            <!-- pageFooterWrapHolder -->
+            <div class="container position-relative pageFooterWrapHolder">
+                <hr class="separator">
+                <!-- pageFooter -->
+                <footer id="pageFooter" class="position-relative">
+                    <div class="row">
+                        <div class="col col-12 col-md-9 col-lg-6 order-lg-2">
+                            <!-- ftLinksNav -->
+                            <nav class="ftLinksNav">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <h3 class="text-success fs-11">Services</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="/wardrobe-manufacturer">Storage &amp; Wardrobe</a></li>
+                                            <li><a href="/bathroom-vanity-design">Bathroom Vanity</a></li>
+                                            <li><a href="/tv-unit-manufacturer">Tv Unit</a></li>
+                                            <li><a href="/pooja-unit-design">Pooja Unit</a></li>
+                                            <li><a href="/study-table-manufacturer">Study Table</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h3 class="text-success fs-11">Quick Link</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="<%=ResolveUrl("~/")%>">Home</a></li>
+                                            <li><a href="/about-us">About Us</a></li>
+                                            <li><a href="/service">Services</a></li>
+                                            <li><a href="/portfolio">Portfolio </a></li>
+                                            <li><a href="/contact-us">Contact us </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col col-12 col-md-3 col-lg-2 order-lg-3 text-center text-md-left">
+                            <h3 class="text-success fs-11">Social</h3>
+                            <!-- ftSocialLinks -->
+                            <ul class="list-unstyled socialNetworks ftSocialLinks">
+                                <li>
+                                    <a href="https://www.facebook.com/reedifymodularkitchen/" aria-label="facebook" target="_blank"> 
+                                        <i class="fab fa-facebook-f icn text-center facebook"><span class="sr-only">icon</span></i>
+                                        <strong class="text font-weight-normal">Facebook</strong>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="https://www.instagram.com/reedifymodular/" aria-label="instagram" target="_blank">
+                                        <i class="fab fa-instagram icn text-center instagram"><span class="sr-only">icon</span></i>
+                                        <strong class="text font-weight-normal">Instagram</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/ReedifyM" aria-label="Twitter" target="_blank">
+                                        <i class="fab fa-twitter icn text-center twitter"><span class="sr-only">icon</span></i>
+                                        <strong class="text font-weight-normal">Twitter</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCFmQ0CLl2GNQjkL0lWbFRWQ" aria-label="youtube" target="_blank">
+                                        <i class="fab fa-youtube icn text-center youtube"><span class="sr-only">icon</span></i>
+                                        <strong class="text font-weight-normal">Youtube</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://in.pinterest.com/Reedifymodular/" aria-label="pinterest" target="_blank">
+                                        <i class="fab fa-pinterest icn text-center pinterest"><span class="sr-only">icon</span></i>
+                                        <strong class="text font-weight-normal">Pinterest</strong>
+                                    </a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                        <div class="col col-12 col-lg-4 order-lg-1 text-center text-lg-left position-static">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="<%=ResolveUrl("~/")%>">
+                                    <img src="images/reedify-logo.webp" width="115" height="46" alt="Reedify-Logo">
+                                </a>
+                            </div>
+                            <!-- ftAddress -->
+                            <address class="d-block ftAddress">
+                                <!-- adrList -->
+                                <ul class="list-unstyled adrList mb-0">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt flex-shrink-0 icn"><span class="sr-only">icon</span></i>
+                                        <strong class="font-weight-normal text d-block">Shop No. F12, JOP Square (Liberty) Mall , First Floor,
+                                            Model Down, Rohtak 124001</strong>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone fa-flip-horizontal flex-shrink-0 icn"><span class="sr-only">icon</span></i>
+                                        <strong class="font-weight-normal text d-block"><a href="tel:+91-9812053001;">+91-9812053001</a></strong>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope flex-shrink-0 icn"><span class="sr-only">icon</span></i>
+                                        <strong class="font-weight-normal text d-block"><a href="mailto:sales@reedify.in;">sales@reedify.in</a></strong>
+                                    </li>
+                                </ul>
+                            </address>
+                            <!-- copyrightWrap -->
+
+                        </div>
+                    </div>
+                    <div class="row border-top2">
+                        <div class="col-lg-6 mt-0 mt-lg-3">
+                            <p class="text-center text-lg-left">Copyright &copy; 2022 Good Space Modular Pvt. Ltd.</p>
+                        </div>
+                        <div class="col-lg-6 pb-5 pb-md-0 mt-0 mt-lg-3">
+                            <p class="text-center text-lg-right"><a href="https://www.softcron.com" target="_blank">Maintained & Developed by Softcron Technology</a></p>
+                        </div>
+                    </div>
+                    <%--<div class="copyrightWrap">
+                        <p>Copyright &copy; 2022 Good Space Modular Pvt. Ltd. | <a href="https://www.softcron.com">Maintained & Developed by Softcron Technology</a></p>
+                    </div>--%>
+                </footer>
+            </div>
+        </div>
+        <span id="back-top" class="text-center rounded-circle fa fa-angle-up"></span>
+    </div>
+
+    <!-- whatsapp and call button -->
+    <div class="container-fluid  sticky-footer1 ">
+        <div class="row">
+            <div class="col-sm-12  sticky-footer1" id="title_message">
+                <div class="w-50 mt-15 text-left" id="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=919812053001&forceIntent=true&load=loadInIOSExternalSafari&text=Hey%20Reedify" target="_blank">
+                        <div class="whatsappWidget1 widgetPosition-Center-Right1">
+                            <img src="/images/whatsapp_popup.webp" width="60" height="60" alt="whatapp_api" class="whatsappIcon">
+                        </div>
+                    </a>
+                </div>
+                <div class="w-50 text-right mt-15" id="call">
+                    <a href="tel:(+91)-9812053001" data-onclick="">
+                        <div>
+                            <img src="/images/call-button.webp" alt="Call-Button">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=919812053001&amp;forceIntent=true&amp;load=loadInIOSExternalSafari&amp;text=Hey%20Reedify" target="_blank">
+        <div class="whatsappWidget widgetPosition-Center-Right">
+            <img src="/images/whatsapp_popup.webp" width="55" height="55" alt="whatapp_api" class="whatsappIcon">
+        </div>
+    </a>
+
+
+    <!-- include jQuery library -->
+    <%--<script src="js/jquery-3.3.1.min.js"></script>--%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/preloader.js"></script>
+    <!-- include Plugins JavaScript -->
+    <script src="js/plugins.js"></script>
+    <!-- include custom JavaScript -->
+    <script src="js/jquery.main.js"></script>
+  
+</body>
+</html>
